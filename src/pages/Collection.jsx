@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React, {  } from 'react'
 import { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext';
 import Title from '../components/Title';
@@ -33,6 +33,7 @@ const sortProduct = ()=>{
 useEffect(()=>{
 sortProduct();
 },[sortType])
+
   useEffect(()=>{
 
     applyFilter();
@@ -59,14 +60,17 @@ sortProduct();
   else{
     setCategory(prev => [...prev, e.target.value])
   }}
+
   const toggleSubCategory = (e) => {
+    console.log(e.target.value,"hello")
     if(subCategory.includes(e.target.value)){
-      setSubCategory(prev =>prev.filter(item=>item!== e.terget.value))
+      setSubCategory(prev =>prev.filter(item=>item!== e.target.value))
 
   }
   else{
     setSubCategory(prev => [...prev, e.target.value])
-  }}
+  }
+}
   return (
     <div className='flex flex-col
     sm:flex-row gap-1
