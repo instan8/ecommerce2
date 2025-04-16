@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ShopContext } from "./context/ShopContext";
+import { ShopContext } from "../context/ShopContext";
 
 export  const paymentHandler = async (amount) => {
  amount = amount?(amount+10)*100:0

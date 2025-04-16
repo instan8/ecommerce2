@@ -4,7 +4,7 @@ import Title from '../components/Title';
 import { useEffect } from 'react'
 import { assets } from '../assets/frontend_assets/assets';
 import CartTotal from '../components/CartTotal';
-import { paymentHandler } from '../PaymentMethod.js';
+import { paymentHandler } from '../components/PaymentMethod.js';
 function Cart() {
 const { products, currency, cartItems ,updateQuantity,getCartAmount,setloginToast,user} = React.useContext(ShopContext);
   const [cartData, setCartData] = React.useState([]);

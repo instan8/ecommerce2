@@ -66,10 +66,7 @@ const dropdownToggle =()=>{
         <p>about</p>
         <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
         </NavLink>
-        <NavLink to='/contact' className ='text-white text-grey-700'>
-        <p>contact</p>
-        <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'></hr>
-        </NavLink>
+        
         
       </ul>
 
