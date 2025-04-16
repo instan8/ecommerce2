@@ -1,10 +1,13 @@
 {
   "name": "ecommerce",
+  "homepage": "https://instan8.github.io/Ecommerce/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "dev-host": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
