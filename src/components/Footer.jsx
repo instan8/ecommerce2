@@ -9,8 +9,7 @@ function Footer() {
             <div className='text-gray-600 text-sm font-semibold'>
                 <p>We offer handpicked, high-quality products to suit your style.</p>
                 <p>Explore our diverse range of products, from fashion to home decor.</p>
-                <p>Shop with confidence and discover the latest trends at unbeatable prices.</p>
-                <p>Shopifly is your one-stop destination for all your shopping needs.</p>
+               
 
             </div>
         </div>
