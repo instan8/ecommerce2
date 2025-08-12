@@ -24,9 +24,7 @@ function Hero({scrollToLatestCollection}) {
       <p className="text-gray-600 text-lg mb-2">
         We help you build your digital presence with style, power, and purpose.
       </p>
-       <p className='text-gray-600 text-lg mb-2'>We offer handpicked, high-quality products to suit your style.</p>
-                <p className='text-gray-600 text-lg mb-6'> Explore our diverse range of products, from fashion to home decor.</p>
-                
+       
       <button onClick={scrollToLatestCollection} className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-700 transition-all">
         Get Started
       </button>
