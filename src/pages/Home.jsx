@@ -1,14 +1,22 @@
-import React from 'react'
+import React ,{useRef} from 'react'
 import Hero from '../components/Hero'
 import LatestCollection from '../components/LatestCollection'
 import BestSeller from '../components/BestSeller'
+import OurPolicy from '../components/OurPolicy'
 function Home() {
+  const latestCollectionRef = useRef(null);
+
+  const scrollToLatestCollection = () => {
+    latestCollectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
   <>
-  <Hero>
-    </Hero>
-    <LatestCollection></LatestCollection>
-    <BestSeller></BestSeller></>
+  <Hero scrollToLatestCollection={scrollToLatestCollection}>
+    </Hero >
+    <LatestCollection ref={latestCollectionRef}></LatestCollection>
+    <BestSeller></BestSeller>
+    <OurPolicy></OurPolicy>
+    </>
   )
 }
 

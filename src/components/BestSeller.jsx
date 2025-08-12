@@ -24,7 +24,7 @@ useEffect(()=>{
         {bestseller.map((item,index)=>(
             <ProductItem key={index} id={item._id}
             image={item.image} price={item.price}
-            ></ProductItem>
+            name={item.name}></ProductItem>
         ))}
         </div>
     </div>

@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext,forwardRef } from 'react'
 import { ShopContext } from '../context/ShopContext';
 import Title from './Title';
 import{ useEffect } from 'react';
 import ProductItem from './ProductItem';
-function LatestCollection() {
+const LatestCollection =forwardRef(function LatestCollection(props,ref) {
     const { products } = useContext(ShopContext);
     console.log(products,"products")
     const [latestProducts, setLatestProducts] = React.useState([]);
@@ -11,7 +11,7 @@ function LatestCollection() {
         setLatestProducts(products.slice(0, 10))
     }, [])
     return (
-        <div className='my-10'>
+        <div className='my-10' ref={ref}>
             <div className='text-center py-8
         text-3xl'>
                 <Title text1="Latest" text2="Collection">
@@ -36,6 +36,6 @@ function LatestCollection() {
     </div>
     </div>
     )
-}
+})
 
 export default LatestCollection

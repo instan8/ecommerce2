@@ -1,7 +1,7 @@
 import React from 'react'
 import { heroImg } from '../assets/frontend_assets/assets'
 import { useEffect } from 'react'
-function Hero() {
+function Hero({scrollToLatestCollection}) {
   const[imgIndex, setImgIndex] = React.useState(0)
   useEffect(() => {
     const interval =setInterval(() => {
@@ -21,10 +21,13 @@ function Hero() {
       <h1 className="text-4xl text-gray-500 sm:text-5xl font-bold leading-tight mb-6">
         Welcome to <span className="text-black">Your Brand</span>
       </h1>
-      <p className="text-gray-600 text-lg mb-6">
+      <p className="text-gray-600 text-lg mb-2">
         We help you build your digital presence with style, power, and purpose.
       </p>
-      <button className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-700 transition-all">
+       <p className='text-gray-600 text-lg mb-2'>We offer handpicked, high-quality products to suit your style.</p>
+                <p className='text-gray-600 text-lg mb-6'> Explore our diverse range of products, from fashion to home decor.</p>
+                
+      <button onClick={scrollToLatestCollection} className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-700 transition-all">
         Get Started
       </button>
     </div>
